@@ -1,0 +1,45 @@
+#############################################################
+POWERSHELL STUDY:
+YouTube tutorial by Shane Young
+#############################################################
+each command in PS is verb-noun, e.g. Set-Location. In bash that is cd.
+
+#############################################################
+To register your powershell session in .txt you can run:
+Start-Transcript
+and when you're done type:
+Stop-Transcript
+The file by default is in Documents folder, name sth like this:
+PowerShell_transcript.DESKTOP-BI53SRA.qDfzyWOJ.20230301084135.txt
+#############################################################
+
+Update-Help
+
+Get-Command
+Get-Command -noun Service
+
+Get-Help <cmd_name>
+Get-Help Get-Service
+Get-Help Get-Service -Examples
+Get-Help Get-Service -Online
+Get-help cd -Online   ---> Set-Location
+
+Get-Alias
+Get-Alias cls  ----> Clear-Host
+Get-Alias cd   ----> Set-Location
+
+Get-Process -Name Ccode
+
+Get-Process -Name Code | Select-Object *
+
+Get-History
+
+#############################################################
+# Variables
+
+$zebra = Get-Process -Name Code
+$zebra
+$zebra.kill()
+
+#############################################################
+
