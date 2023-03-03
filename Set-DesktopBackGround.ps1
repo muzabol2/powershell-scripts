@@ -1,10 +1,10 @@
 param(
     [Parameter(Position = 0)]
-    $R = 0,
+    $R = 255,
     [Parameter(Position = 1)]
     $G = 99,
     [Parameter(Position = 2)]
-    $B = 198
+    $B = 255
 )
 
 $code = @'
