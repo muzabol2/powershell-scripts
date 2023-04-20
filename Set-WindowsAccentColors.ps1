@@ -1,5 +1,6 @@
-$RegPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent"
+# Found on the internet:
 
+$RegPath = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Accent"
 
 #Accent Color Menu Key
 $AccentColorMenuKey = @{
